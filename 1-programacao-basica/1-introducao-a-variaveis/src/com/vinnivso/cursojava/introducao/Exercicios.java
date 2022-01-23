@@ -47,10 +47,19 @@ public class Exercicios {
         /*
          * 5. Faça um programa que converta metros para centímetros.
         */
-        System.out.println("Digite o valor em metros para ser convertido em centímetros, seguindo a notação de ponto " +
+        System.out.println("Digite o valor em metros para ser convertido em centímetros " +
                 "flutuante.");
         double valorInformadoMetros = scan.nextDouble();
         double valorConvertidoCentimetros = valorInformadoMetros * 100;
         System.out.println("A conversão é: " + valorConvertidoCentimetros+"cm");
+
+
+        /*
+         * 6. Faça um programa que peça o raio de um círcule. Calcule e mostra sua área.
+        */
+        System.out.println("Digite o valor do raio");
+        double valorRaio = scan.nextDouble();
+        double valorArea = Math.PI * (valorRaio * valorRaio);
+        System.out.println("Área é: " + valorArea);
     }
 }
