@@ -62,5 +62,15 @@ public class Exercicios {
         double valorRaio = scan.nextDouble();
         double valorArea = Math.PI * (valorRaio * valorRaio);
         System.out.println("Área é: " + valorArea);
+
+
+        /*
+         * 7. Faça um programa que calcule a área do quadrado e mostre o dobro para o usuário.
+        */
+        System.out.println("Digite o valor corresponde ao vértice do quadrado.");
+        double valorVertice = scan.nextDouble();
+        double valorAreaQuadrado = Math.pow(valorVertice, 2);
+        double dobroValorAreaQuadrado = 2 * valorAreaQuadrado;
+        System.out.println("O dobro da área é: " + dobroValorAreaQuadrado);
     }
 }
