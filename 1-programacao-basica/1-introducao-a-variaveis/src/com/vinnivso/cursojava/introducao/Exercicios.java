@@ -1,10 +1,13 @@
 package com.vinnivso.cursojava.introducao;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.lang.Math;
 
 public class Exercicios {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
         /*
         * 1. Faça um programa que mostre "Alô mundo" na tela.
         */
@@ -15,7 +18,6 @@ public class Exercicios {
          * 2. Faça um programa que peça um número e então mostre a mensagem "O número informado foi x".
         */
         System.out.println("Digite um número.");
-        Scanner scan = new Scanner(System.in);
         double numeroInformado = scan.nextDouble();
         System.out.println("O número informado foi " + numeroInformado);
 
@@ -72,5 +74,16 @@ public class Exercicios {
         double valorAreaQuadrado = Math.pow(valorVertice, 2);
         double dobroValorAreaQuadrado = 2 * valorAreaQuadrado;
         System.out.println("O dobro da área é: " + dobroValorAreaQuadrado);
+
+
+        /*
+         * 8. Faça um programa que pergunta sua remuneração horária, horas trabalhadas no mês e retorne seu salário.
+        */
+        System.out.println("Quanto recebe por hora?");
+        double valorHora = scan.nextDouble();
+        System.out.println("Quantas horas trabalha por mês?");
+        double valorHoraMes = scan.nextDouble();
+        double salarioHoraMes = valorHora * valorHoraMes;
+        System.out.println("Seu salário será de: " + "R$"+ decimalFormat.format(salarioHoraMes));
     }
 }
