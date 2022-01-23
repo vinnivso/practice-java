@@ -124,5 +124,14 @@ public class Exercicios {
         System.out.println("Resultado B: " + decimalFormat.format(resultB));
         double resultC = Math.pow(numero3, 3);
         System.out.println("Resultado C: " + decimalFormat.format(resultC));
+
+
+        /*
+         * 12. Altura em metros como parâmetro, calcule o peso ideal.
+        */
+        System.out.println("Digite o valor de sua altura em metros.");
+        double altura = scan.nextDouble();
+        double pesoIdeal = (72.7 * altura) - 58;
+        System.out.println("Seu peso ideal em é de: " + decimalFormat.format(pesoIdeal)+"kg.");
     }
 }
