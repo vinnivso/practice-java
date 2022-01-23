@@ -94,5 +94,14 @@ public class Exercicios {
         double grausFahrenheit = scan.nextDouble();
         double grausCelsius = (5 * (grausFahrenheit - 32) / 9);
         System.out.println("Temperatura em Celsius é: " + decimalFormat.format(grausCelsius)+"ºC");
+
+
+        /*
+         * 10. Faça um programa que peça Celsius e mostre a temperatura em Fahrenheit.
+        */
+        System.out.println("Digite o valor de ºC para serem convertidos para ºF.");
+        double grausCelsiusConverter = scan.nextDouble();
+        double grausFahrenheitConverter = (grausCelsiusConverter * 5 / 9) + 32;
+        System.out.println("Temperatura em Celsius é: " + decimalFormat.format(grausFahrenheitConverter)+"ºC");
     }
 }
