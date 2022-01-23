@@ -148,5 +148,17 @@ public class Exercicios {
         double sindicato = salarioSample * 5 / 100;
         double salarioLiquido = salarioSample - (ir + inss + sindicato);
         System.out.println("Seu salário nesse mês, será de: R$"+decimalFormat.format(salarioLiquido));
+
+
+        /*
+         * 14. Parâmetro arquivo para download em MB e velocidade de um link na Internet em Mbps. t em minutos.
+        */
+        System.out.println("Tamanho do arquivo em MB.");
+        double arquivo = scan.nextDouble();
+        System.out.println("Velocidade de conexão da internet");
+        double velocidade = scan.nextDouble();
+        double tempo = arquivo / velocidade;
+
+        System.out.println("Tempo de download é "+decimalFormat.format(tempo));
     }
 }
