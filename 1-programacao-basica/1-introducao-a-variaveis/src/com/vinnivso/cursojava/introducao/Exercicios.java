@@ -85,5 +85,14 @@ public class Exercicios {
         double valorHoraMes = scan.nextDouble();
         double salarioHoraMes = valorHora * valorHoraMes;
         System.out.println("Seu salário será de: " + "R$"+ decimalFormat.format(salarioHoraMes));
+
+
+        /*
+         * 9. Faça um programa que peça Fahrenheit e mostre a temperatura em Celsius.
+        */
+        System.out.println("Digite o valor de ºF para serem convertidos para ºC.");
+        double grausFahrenheit = scan.nextDouble();
+        double grausCelsius = (5 * (grausFahrenheit - 32) / 9);
+        System.out.println("Temperatura em Celsius é: " + decimalFormat.format(grausCelsius)+"ºC");
     }
 }
