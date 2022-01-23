@@ -1,6 +1,7 @@
 package com.vinnivso.cursojava.introducao;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Exercicios {
     public static void main(String[] args) {
