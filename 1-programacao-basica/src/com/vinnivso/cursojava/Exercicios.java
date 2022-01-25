@@ -1,4 +1,4 @@
-package com.vinnivso.cursojava.introducao;
+package com.vinnivso.cursojava;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
