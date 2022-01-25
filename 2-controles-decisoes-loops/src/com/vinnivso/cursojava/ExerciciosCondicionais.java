@@ -30,13 +30,23 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //3. Programa que verifica "M" ou "F"
-        System.out.println("Informe seu sexo M para Masculino ou F para Feminino");
-        String stringInformada = scan.nextLine();
-        switch (stringInformada) {
-            case "M" -> System.out.println(stringInformada + " - Masculino");
-            case "F" -> System.out.println(stringInformada + " - Feminino");
-            default -> System.out.println(stringInformada + " Representa um sexo inválido");
+//        //3. Programa que verifica "M" ou "F"
+//        System.out.println("Informe seu sexo M para Masculino ou F para Feminino");
+//        String stringInformada = scan.nextLine();
+//        switch (stringInformada) {
+//            case "M" -> System.out.println(stringInformada + " - Masculino");
+//            case "F" -> System.out.println(stringInformada + " - Feminino");
+//            default -> System.out.println(stringInformada + " Representa um sexo inválido");
+//        }
+
+
+        //4. Programa que verifique vogal ou consoante.
+        System.out.println("Digite qualquer letra para verificar se é vogal ou consoante");
+        String stringVogalConsoante = scan.nextLine();
+        switch (stringVogalConsoante.toUpperCase()) {
+            case "A","E","I","O","U" -> System.out.println("Caracter informado corresponde uma " +
+                    "vogal");
+            default -> System.out.println("Caracter informado corresponde uma consoante");
         }
     }
 }
