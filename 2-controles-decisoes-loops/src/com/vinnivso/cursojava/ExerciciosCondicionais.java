@@ -50,22 +50,37 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //5. Programa para ler duas notas parciais de um aluno.
-        System.out.println("Informe a primeira nota");
-        double primeiraNota = scan.nextDouble();
-        System.out.println("Informe a segunda nota");
-        double segundaNota = scan.nextDouble();
-        double mediaDoAluno = (primeiraNota + segundaNota) / 2;
-        if (mediaDoAluno >= 7 && mediaDoAluno < 10) {
-            System.out.println("Aprovado");
-        } else if (mediaDoAluno == 10) {
-            System.out.println("Aprovado com distinção");
-        } else if (mediaDoAluno > 10) {
-            System.out.println("A nota máxima possível é 10");
-        } else if (mediaDoAluno < 0) {
-            System.out.println("A nota mínima possível é 0");
+//        //5. Programa para ler duas notas parciais de um aluno.
+//        System.out.println("Informe a primeira nota");
+//        double primeiraNota = scan.nextDouble();
+//        System.out.println("Informe a segunda nota");
+//        double segundaNota = scan.nextDouble();
+//        double mediaDoAluno = (primeiraNota + segundaNota) / 2;
+//        if (mediaDoAluno >= 7 && mediaDoAluno < 10) {
+//            System.out.println("Aprovado");
+//        } else if (mediaDoAluno == 10) {
+//            System.out.println("Aprovado com distinção");
+//        } else if (mediaDoAluno > 10) {
+//            System.out.println("A nota máxima possível é 10");
+//        } else if (mediaDoAluno < 0) {
+//            System.out.println("A nota mínima possível é 0");
+//        } else {
+//            System.out.println("Reprovado");
+//        }
+
+
+        //6. Programa para ler três números e mostrar o maior deles.
+        System.out.println("Informe três números, separados por SPACE ou dando ENTER para cada valor inserido");
+        double primeiroNumeroInformado = scan.nextDouble();
+        double segundoNumeroInformado = scan.nextDouble();
+        double terceiroNumeroInformado = scan.nextDouble();
+        double MaxPrimeiroSegundo = Math.max(primeiroNumeroInformado, segundoNumeroInformado);
+        if (MaxPrimeiroSegundo > terceiroNumeroInformado) {
+            System.out.println("O valor máximo dentre os números informados é: " + MaxPrimeiroSegundo);
+        } else if (MaxPrimeiroSegundo == terceiroNumeroInformado) {
+            System.out.println("Os valores valores informados são equivalentes dentre si");
         } else {
-            System.out.println("Reprovado");
+            System.out.println("O valor máximo dentre os números informados é: " + terceiroNumeroInformado);
         }
     }
 }
