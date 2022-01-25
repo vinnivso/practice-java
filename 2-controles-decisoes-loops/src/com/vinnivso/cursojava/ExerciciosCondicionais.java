@@ -1,5 +1,7 @@
 package com.vinnivso.cursojava;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExerciciosCondicionais {
@@ -100,22 +102,38 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //8. Pergunte o preço de três produtos e informe qual deve ser comprado, com base no menor preço.
-        System.out.println("Informe o preço da laranja");
-        double precoLaranja = scan.nextDouble();
-        System.out.println("Informe o preço da uva");
-        double precoUva = scan.nextDouble();
-        System.out.println("Informe o preço da Maça");
-        double precoMaca = scan.nextDouble();
+//        //8. Pergunte o preço de três produtos e informe qual deve ser comprado, com base no menor preço.
+//        System.out.println("Informe o preço da laranja");
+//        double precoLaranja = scan.nextDouble();
+//        System.out.println("Informe o preço da uva");
+//        double precoUva = scan.nextDouble();
+//        System.out.println("Informe o preço da Maça");
+//        double precoMaca = scan.nextDouble();
+//
+//        if (precoLaranja < precoUva && precoLaranja < precoMaca) {
+//            System.out.println("Você deve comprar a laranja, que está mais barata");
+//        } else if (precoUva < precoLaranja && precoUva < precoMaca) {
+//            System.out.println("Você deve comprar a Uva, que está mais barata");
+//        } else if (precoMaca < precoLaranja && precoMaca < precoUva) {
+//            System.out.println("Você deve comprar a Maça, que está mais barata");
+//        } else {
+//            System.out.println("Os preços são equivalentes");
+//        }
 
-        if (precoLaranja < precoUva && precoLaranja < precoMaca) {
-            System.out.println("Você deve comprar a laranja, que está mais barata");
-        } else if (precoUva < precoLaranja && precoUva < precoMaca) {
-            System.out.println("Você deve comprar a Uva, que está mais barata");
-        } else if (precoMaca < precoLaranja && precoMaca < precoUva) {
-            System.out.println("Você deve comprar a Maça, que está mais barata");
-        } else {
-            System.out.println("Os preços são equivalentes");
+
+        //9. Programa que leia três números e mostre em ordem crescente. Resolvi com Array ao invés de IF/ ELSE.
+        System.out.println("Digite três números, separados por SPACE ou por ENTER");
+        double primeiroNumeroDigitado = scan.nextDouble();
+        double segundoNumeroDigitado = scan.nextDouble();
+        double terceiroNumeroDigitado = scan.nextDouble();
+        double[] array = new double[] {primeiroNumeroDigitado, segundoNumeroDigitado, terceiroNumeroDigitado};
+        for (double i : array) {
+            System.out.println(i+"");
+        }
+        Arrays.sort(array);
+        System.out.println("\n Após aplicar a ordem crescente ...");
+        for (double i : array) {
+            System.out.println(i+"");
         }
     }
 }
