@@ -84,19 +84,38 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //7. Programa para ler três número e mostrar o maior e menor deles.
-        System.out.println("Informe três números, separados por SPACE ou dando ENTER para cada valor inserido");
-        double firstInputNumber = scan.nextDouble();
-        double secondInputNumber = scan.nextDouble();
-        double thirdInputNumber = scan.nextDouble();
-        double minFirstSecond = Math.min(firstInputNumber, secondInputNumber);
-        double maxFirstSecond = Math.max(firstInputNumber, secondInputNumber);
-        if (minFirstSecond < thirdInputNumber && maxFirstSecond < thirdInputNumber) {
-            System.out.println("O mínimo valor é: " + minFirstSecond + " e o máximo valor é: " + thirdInputNumber);
-        } else if (minFirstSecond > thirdInputNumber && maxFirstSecond > thirdInputNumber) {
-            System.out.println("O mínimo valor é: " + thirdInputNumber + " e o máximo valor é: " + maxFirstSecond);
+//        //7. Programa para ler três número e mostrar o maior e menor deles.
+//        System.out.println("Informe três números, separados por SPACE ou dando ENTER para cada valor inserido");
+//        double firstInputNumber = scan.nextDouble();
+//        double secondInputNumber = scan.nextDouble();
+//        double thirdInputNumber = scan.nextDouble();
+//        double minFirstSecond = Math.min(firstInputNumber, secondInputNumber);
+//        double maxFirstSecond = Math.max(firstInputNumber, secondInputNumber);
+//        if (minFirstSecond < thirdInputNumber && maxFirstSecond < thirdInputNumber) {
+//            System.out.println("O mínimo valor é: " + minFirstSecond + " e o máximo valor é: " + thirdInputNumber);
+//        } else if (minFirstSecond > thirdInputNumber && maxFirstSecond > thirdInputNumber) {
+//            System.out.println("O mínimo valor é: " + thirdInputNumber + " e o máximo valor é: " + maxFirstSecond);
+//        } else {
+//            System.out.println("O valores são equivalentes entre seus máximos e mínimos");
+//        }
+
+
+        //8. Pergunte o preço de três produtos e informe qual deve ser comprado, com base no menor preço.
+        System.out.println("Informe o preço da laranja");
+        double precoLaranja = scan.nextDouble();
+        System.out.println("Informe o preço da uva");
+        double precoUva = scan.nextDouble();
+        System.out.println("Informe o preço da Maça");
+        double precoMaca = scan.nextDouble();
+
+        if (precoLaranja < precoUva && precoLaranja < precoMaca) {
+            System.out.println("Você deve comprar a laranja, que está mais barata");
+        } else if (precoUva < precoLaranja && precoUva < precoMaca) {
+            System.out.println("Você deve comprar a Uva, que está mais barata");
+        } else if (precoMaca < precoLaranja && precoMaca < precoUva) {
+            System.out.println("Você deve comprar a Maça, que está mais barata");
         } else {
-            System.out.println("O valores são equivalentes entre seus máximos e mínimos");
+            System.out.println("Os preços são equivalentes");
         }
     }
 }
