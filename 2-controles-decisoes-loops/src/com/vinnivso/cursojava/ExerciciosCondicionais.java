@@ -18,5 +18,15 @@ public class ExerciciosCondicionais {
         } else {
             System.out.println("Os valores informados são equivalentes");
         }
+
+
+        //2. Programa que peça um valor e diga se é negativo ou positivo.
+        System.out.println("Digite um valor valor inteiro");
+        double valorInformado = scan.nextDouble();
+        if (valorInformado < 0) {
+            System.out.println("O valor informado é negativo: " + valorInformado);
+        } else {
+            System.out.println("O valor informado é positivo: " + valorInformado);
+        }
     }
 }
