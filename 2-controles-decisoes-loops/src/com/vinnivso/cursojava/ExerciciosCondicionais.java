@@ -69,18 +69,34 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //6. Programa para ler três números e mostrar o maior deles.
+//        //6. Programa para ler três números e mostrar o maior deles.
+//        System.out.println("Informe três números, separados por SPACE ou dando ENTER para cada valor inserido");
+//        double primeiroNumeroInformado = scan.nextDouble();
+//        double segundoNumeroInformado = scan.nextDouble();
+//        double terceiroNumeroInformado = scan.nextDouble();
+//        double maxPrimeiroSegundo = Math.max(primeiroNumeroInformado, segundoNumeroInformado);
+//        if (maxPrimeiroSegundo > terceiroNumeroInformado) {
+//            System.out.println("O valor máximo dentre os números informados é: " + maxPrimeiroSegundo);
+//        } else if (maxPrimeiroSegundo == terceiroNumeroInformado) {
+//            System.out.println("Os valores valores informados são equivalentes dentre si");
+//        } else {
+//            System.out.println("O valor máximo dentre os números informados é: " + terceiroNumeroInformado);
+//        }
+
+
+        //7. Programa para ler três número e mostrar o maior e menor deles.
         System.out.println("Informe três números, separados por SPACE ou dando ENTER para cada valor inserido");
-        double primeiroNumeroInformado = scan.nextDouble();
-        double segundoNumeroInformado = scan.nextDouble();
-        double terceiroNumeroInformado = scan.nextDouble();
-        double MaxPrimeiroSegundo = Math.max(primeiroNumeroInformado, segundoNumeroInformado);
-        if (MaxPrimeiroSegundo > terceiroNumeroInformado) {
-            System.out.println("O valor máximo dentre os números informados é: " + MaxPrimeiroSegundo);
-        } else if (MaxPrimeiroSegundo == terceiroNumeroInformado) {
-            System.out.println("Os valores valores informados são equivalentes dentre si");
+        double firstInputNumber = scan.nextDouble();
+        double secondInputNumber = scan.nextDouble();
+        double thirdInputNumber = scan.nextDouble();
+        double minFirstSecond = Math.min(firstInputNumber, secondInputNumber);
+        double maxFirstSecond = Math.max(firstInputNumber, secondInputNumber);
+        if (minFirstSecond < thirdInputNumber && maxFirstSecond < thirdInputNumber) {
+            System.out.println("O mínimo valor é: " + minFirstSecond + " e o máximo valor é: " + thirdInputNumber);
+        } else if (minFirstSecond > thirdInputNumber && maxFirstSecond > thirdInputNumber) {
+            System.out.println("O mínimo valor é: " + thirdInputNumber + " e o máximo valor é: " + maxFirstSecond);
         } else {
-            System.out.println("O valor máximo dentre os números informados é: " + terceiroNumeroInformado);
+            System.out.println("O valores são equivalentes entre seus máximos e mínimos");
         }
     }
 }
