@@ -121,19 +121,31 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //9. Programa que leia três números e mostre em ordem crescente. Resolvi com Array ao invés de IF/ ELSE.
-        System.out.println("Digite três números, separados por SPACE ou por ENTER");
-        double primeiroNumeroDigitado = scan.nextDouble();
-        double segundoNumeroDigitado = scan.nextDouble();
-        double terceiroNumeroDigitado = scan.nextDouble();
-        double[] array = new double[] {primeiroNumeroDigitado, segundoNumeroDigitado, terceiroNumeroDigitado};
-        for (double i : array) {
-            System.out.println(i+"");
-        }
-        Arrays.sort(array);
-        System.out.println("\n Após aplicar a ordem crescente ...");
-        for (double i : array) {
-            System.out.println(i+"");
+//        //9. Programa que leia três números e mostre em ordem crescente. Resolvi com Array ao invés de IF/ ELSE.
+//        System.out.println("Digite três números, separados por SPACE ou por ENTER");
+//        double primeiroNumeroDigitado = scan.nextDouble();
+//        double segundoNumeroDigitado = scan.nextDouble();
+//        double terceiroNumeroDigitado = scan.nextDouble();
+//        double[] array = new double[] {primeiroNumeroDigitado, segundoNumeroDigitado, terceiroNumeroDigitado};
+//        for (double i : array) {
+//            System.out.println(i+"");
+//        }
+//        Arrays.sort(array);
+//        System.out.println("\n Após aplicar a ordem crescente ...");
+//        for (double i : array) {
+//            System.out.println(i+"");
+//        }
+
+
+        //10. Programa M-Matutino, V-Vespertino e N-Noturno, sendo assim, "Bom dia", "Boa tarde", "Boa Noite" ou
+        // "Valor Indálido!".
+        System.out.println("Informe seu turno de estudo, como 'M-Matutino','V-Vespertino' e 'N-Noturno'");
+        String periodoInformado = scan.nextLine();
+        switch (periodoInformado.toUpperCase()) {
+            case "M" -> System.out.println("Matutino");
+            case "V" -> System.out.println("Vespertino");
+            case "N" -> System.out.println("Noturno");
+            default -> System.out.println("Valor Inválido!");
         }
     }
 }
