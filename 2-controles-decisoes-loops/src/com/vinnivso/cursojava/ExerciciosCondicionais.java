@@ -1,12 +1,14 @@
 package com.vinnivso.cursojava;
 
 import java.lang.reflect.Array;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExerciciosCondicionais {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
 //        //1. Programa que peça dois números e imprima o maior deles.
 //        System.out.println("Digite o primeiro valor");
@@ -137,15 +139,33 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //10. Programa M-Matutino, V-Vespertino e N-Noturno, sendo assim, "Bom dia", "Boa tarde", "Boa Noite" ou
-        // "Valor Indálido!".
-        System.out.println("Informe seu turno de estudo, como 'M-Matutino','V-Vespertino' e 'N-Noturno'");
-        String periodoInformado = scan.nextLine();
-        switch (periodoInformado.toUpperCase()) {
-            case "M" -> System.out.println("Matutino");
-            case "V" -> System.out.println("Vespertino");
-            case "N" -> System.out.println("Noturno");
-            default -> System.out.println("Valor Inválido!");
+//        //10. Programa M-Matutino, V-Vespertino e N-Noturno, sendo assim, "Bom dia", "Boa tarde", "Boa Noite" ou
+//        // "Valor Indálido!".
+//        System.out.println("Informe seu turno de estudo, como 'M-Matutino','V-Vespertino' e 'N-Noturno'");
+//        String periodoInformado = scan.nextLine();
+//        switch (periodoInformado.toUpperCase()) {
+//            case "M" -> System.out.println("Matutino");
+//            case "V" -> System.out.println("Vespertino");
+//            case "N" -> System.out.println("Noturno");
+//            default -> System.out.println("Valor Inválido!");
+//        }
+
+
+        //11. Salário Tabajara.
+        System.out.println("Informe seu salário");
+        double salarioInformado = scan.nextDouble();
+        if (salarioInformado <= 280) {
+            salarioInformado += (salarioInformado * .2);
+            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
+        } else if (salarioInformado > 280 && salarioInformado <= 700) {
+            salarioInformado += (salarioInformado * .15);
+            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
+        } else if (salarioInformado > 700 && salarioInformado <= 1500) {
+            salarioInformado += (salarioInformado * .1);
+            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
+        } else {
+            salarioInformado += (salarioInformado * .05);
+            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
         }
     }
 }
