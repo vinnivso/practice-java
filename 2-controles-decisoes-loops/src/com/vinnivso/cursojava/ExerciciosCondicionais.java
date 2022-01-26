@@ -29,6 +29,8 @@ public class ExerciciosCondicionais {
 //        double valorInformado = scan.nextDouble();
 //        if (valorInformado < 0) {
 //            System.out.println("O valor informado é negativo: " + valorInformado);
+//        } else if (valorInformado == 0) {
+//            System.out.println("O valor informado é nulo");
 //        } else {
 //            System.out.println("O valor informado é positivo: " + valorInformado);
 //        }
@@ -151,21 +153,22 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //11. Salário Tabajara.
-        System.out.println("Informe seu salário");
-        double salarioInformado = scan.nextDouble();
-        if (salarioInformado <= 280) {
-            salarioInformado += (salarioInformado * .2);
-            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
-        } else if (salarioInformado > 280 && salarioInformado <= 700) {
-            salarioInformado += (salarioInformado * .15);
-            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
-        } else if (salarioInformado > 700 && salarioInformado <= 1500) {
-            salarioInformado += (salarioInformado * .1);
-            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
-        } else {
-            salarioInformado += (salarioInformado * .05);
-            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
-        }
+//        //11. Salário Tabajara.
+//        System.out.println("Informe seu salário");
+//        double salarioInformado = scan.nextDouble();
+//        if (salarioInformado <= 280) {
+//            salarioInformado += (salarioInformado * .2);
+//            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
+//        } else if (salarioInformado > 280 && salarioInformado <= 700) {
+//            salarioInformado += (salarioInformado * .15);
+//            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
+//        } else if (salarioInformado > 700 && salarioInformado <= 1500) {
+//            salarioInformado += (salarioInformado * .1);
+//            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
+//        } else {
+//            salarioInformado += (salarioInformado * .05);
+//            System.out.println("Com a correção seu salário será de: " + "R$"+decimalFormat.format(salarioInformado));
+//        }
+
     }
 }
