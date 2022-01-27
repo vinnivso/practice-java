@@ -153,24 +153,55 @@ public class ExerciciosCondicionais {
 //        }
 
 
-//        11. Salário Tabajara.
-        System.out.println("Informe seu salário");
-        double salarioInformado = scan.nextDouble();
-        double percentual = 0;
-        if (salarioInformado <= 280) {
-            percentual = 20;
-        } else if (salarioInformado > 280 && salarioInformado < 700) {
-            percentual = 15;
-        } else if (salarioInformado >= 700 && salarioInformado < 1500) {
-            percentual = 10;
-        } else if (salarioInformado >= 1500) {
-            percentual = 5;
+////        11. Salário Tabajara.
+//        System.out.println("Informe seu salário");
+//        double salarioInformado = scan.nextDouble();
+//        double percentual = 0;
+//        if (salarioInformado <= 280) {
+//            percentual = 20;
+//        } else if (salarioInformado > 280 && salarioInformado < 700) {
+//            percentual = 15;
+//        } else if (salarioInformado >= 700 && salarioInformado < 1500) {
+//            percentual = 10;
+//        } else if (salarioInformado >= 1500) {
+//            percentual = 5;
+//        }
+//        double aumento = salarioInformado * (percentual / 100);
+//        double salarioAjustado = salarioInformado + aumento;
+//        System.out.println("Salário: " + salarioInformado);
+//        System.out.println("Percentual: " + percentual);
+//        System.out.println("Aumento: " + aumento);
+//        System.out.println("Salário ajustado: " + salarioAjustado);
+
+
+        //12. Folha de Pagamento.
+        System.out.println("Informe seu valor/hora");
+        double valorHora = scan.nextDouble();
+        System.out.println("Informe horas trabalhadas no mês");
+        double horasMes = scan.nextDouble();
+
+        double salarioBruto = valorHora * horasMes;
+        double percentualIR = 0;
+        if (salarioBruto <= 900) {
+            percentualIR = 0;
+        } else if (salarioBruto > 900 && salarioBruto <= 1500) {
+            percentualIR = .5;
+        } else if (salarioBruto > 1500 && salarioBruto <= 2500) {
+            percentualIR = .1;
+        } else if (salarioBruto > 2500) {
+            percentualIR = .2;
         }
-        double aumento = salarioInformado * (percentual / 100);
-        double salarioAjustado = salarioInformado + aumento;
-        System.out.println("Salário: " + salarioInformado);
-        System.out.println("Percentual: " + percentual);
-        System.out.println("Aumento: " + aumento);
-        System.out.println("Salário ajustado: " + salarioAjustado);
+        double ir = salarioBruto * percentualIR;
+        double inss = salarioBruto * .1;
+        double fgts = salarioBruto * .11;
+        double totalDescontos = ir + inss;
+        double salarioLiquido = salarioBruto - totalDescontos;
+
+        System.out.println("Salário bruto: (" + valorHora + "*" + horasMes + "): " + salarioBruto);
+        System.out.println("(-) IR (" + percentualIR+"% ):" + ir);
+        System.out.println("(-) INSS ( 10% ): " + inss);
+        System.out.println("(-) FGTS ( 11% ): " + fgts);
+        System.out.println("Total de descontos: " + totalDescontos);
+        System.out.println("Salário Líquido: " + salarioLiquido);
     }
 }
