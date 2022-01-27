@@ -306,16 +306,33 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //18. Par ou ímpar?
-        System.out.println("Informe um número natural");
-        int numeroNatural = input.nextInt();
-        if (numeroNatural == 0) {
-            System.out.println("O número: " + numeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
-        } else if (numeroNatural % 2 == 0) {
-            System.out.println("O número: " + numeroNatural + " é PAR");
-        }
-        else {
-            System.out.println("O número: " + numeroNatural + " é ÍMPAR");
+//        //18. Par ou ímpar?
+//        System.out.println("Informe um número natural");
+//        int numeroNatural = input.nextInt();
+//        if (numeroNatural == 0) {
+//            System.out.println("O número: " + numeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
+//        } else if (numeroNatural % 2 == 0) {
+//            System.out.println("O número: " + numeroNatural + " é PAR");
+//        }
+//        else {
+//            System.out.println("O número: " + numeroNatural + " é ÍMPAR");
+//        }
+
+
+        //19. Programa pede dois números e solicita operação básica para o usuário.
+        System.out.println("Informe o valor do primeiro número natural");
+        long primeiroNumeroNatural = input.nextLong();
+        System.out.println("Informe o valor do segundo número natural");
+        long segundoNumeroNatural = input.nextLong();
+        System.out.println("Informe a operação desejada (+ , - , * , / )");
+        String operacaoDesejada = input.next();
+
+        switch (operacaoDesejada) {
+            case "+" -> System.out.println("Resultado da soma: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural + segundoNumeroNatural)));
+            case "-" -> System.out.println("Resultado da subtração: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural - segundoNumeroNatural)));
+            case "*" -> System.out.println("Resultado da multiplicação: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural * segundoNumeroNatural)));
+            case "/" -> System.out.println("Resultado da divisão: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural / segundoNumeroNatural)));
+            default -> System.out.println("Por favor, insira uma operação com base nos modelos apresentados");
         }
 
     }
