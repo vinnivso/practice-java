@@ -261,10 +261,10 @@ public class ExerciciosCondicionais {
         System.out.println("Entre com o valor do terceiro lado");
         double valorTerceiroLado = scan.nextDouble();
 
-        if (((valorPrimeiroLado + valorSegundoLado) > valorTerceiroLado) && ((valorPrimeiroLado + valorTerceiroLado) > valorSegundoLado) && ((valorSegundoLado + valorTerceiroLado) > valorPrimeiroLado)) {
+        if (((valorPrimeiroLado + valorSegundoLado) > valorTerceiroLado) || ((valorPrimeiroLado + valorTerceiroLado) > valorSegundoLado) || ((valorSegundoLado + valorTerceiroLado) > valorPrimeiroLado)) {
             if (valorPrimeiroLado == valorSegundoLado && valorPrimeiroLado == valorTerceiroLado) {
                 System.out.println("Equilátero");
-            } else if (valorPrimeiroLado != valorSegundoLado && valorPrimeiroLado != valorTerceiroLado) {
+            } else if (valorPrimeiroLado == valorSegundoLado || valorPrimeiroLado == valorTerceiroLado || valorSegundoLado == valorTerceiroLado) {
                 System.out.println("Isósceles");
             } else {
                 System.out.println("Escaleno");
@@ -273,7 +273,5 @@ public class ExerciciosCondicionais {
             System.out.println("Os valores informados não correspondem com um triângulo");
         }
 
-
-        //16.
     }
 }
