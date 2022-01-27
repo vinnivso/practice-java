@@ -294,8 +294,8 @@ public class ExerciciosCondicionais {
 //                System.out.println("x2 = " + decimalFormat.format(x2));
 //            }
 //        }
-
-
+//
+//
 //        //17. Ano bissexto ou não?
 //        System.out.println("Informe o ano que deseja saber se é bissexto");
 //        long anoInformado = input.nextLong();
@@ -304,8 +304,8 @@ public class ExerciciosCondicionais {
 //        } else {
 //            System.out.println("O ano inserido não é bissexto.");
 //        }
-
-
+//
+//
 //        //18. Par ou ímpar?
 //        System.out.println("Informe um número natural");
 //        int numeroNatural = input.nextInt();
@@ -334,6 +334,21 @@ public class ExerciciosCondicionais {
             case "/" -> System.out.println("Resultado da divisão: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural / segundoNumeroNatural)));
             default -> System.out.println("Por favor, insira uma operação com base nos modelos apresentados");
         }
+
+        if (primeiroNumeroNatural == 0) {
+            System.out.println("O número: " + primeiroNumeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
+        } else if (primeiroNumeroNatural % 2 == 0) {
+            System.out.println("O número: " + primeiroNumeroNatural + " é PAR");
+        } else if (segundoNumeroNatural == 0) {
+            System.out.println("O número: " + segundoNumeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
+        } else if (segundoNumeroNatural % 2 == 0) {
+            System.out.println("O número: " + segundoNumeroNatural + " é PAR");
+        }
+        else {
+            System.out.println("O número: " + primeiroNumeroNatural + " é ÍMPAR");
+            System.out.println("O número: " + segundoNumeroNatural + " é ÍMPAR");
+        }
+
 
     }
 }
