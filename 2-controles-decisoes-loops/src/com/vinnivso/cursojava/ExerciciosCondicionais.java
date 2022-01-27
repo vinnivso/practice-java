@@ -174,34 +174,52 @@ public class ExerciciosCondicionais {
 //        System.out.println("Salário ajustado: " + salarioAjustado);
 
 
-        //12. Folha de Pagamento.
-        System.out.println("Informe seu valor/hora");
-        double valorHora = scan.nextDouble();
-        System.out.println("Informe horas trabalhadas no mês");
-        double horasMes = scan.nextDouble();
+//        //12. Folha de Pagamento.
+//        System.out.println("Informe seu valor/hora");
+//        double valorHora = scan.nextDouble();
+//        System.out.println("Informe horas trabalhadas no mês");
+//        double horasMes = scan.nextDouble();
+//
+//        double salarioBruto = valorHora * horasMes;
+//        double percentualIR = 0;
+//        if (salarioBruto <= 900) {
+//            percentualIR = 0;
+//        } else if (salarioBruto > 900 && salarioBruto <= 1500) {
+//            percentualIR = .5;
+//        } else if (salarioBruto > 1500 && salarioBruto <= 2500) {
+//            percentualIR = .1;
+//        } else if (salarioBruto > 2500) {
+//            percentualIR = .2;
+//        }
+//        double ir = salarioBruto * percentualIR;
+//        double inss = salarioBruto * .1;
+//        double fgts = salarioBruto * .11;
+//        double totalDescontos = ir + inss;
+//        double salarioLiquido = salarioBruto - totalDescontos;
+//
+//        System.out.println("Salário bruto: (" + valorHora + "*" + horasMes + "): " + decimalFormat.format(salarioBruto));
+//        System.out.println("(-) IR (" + percentualIR+"% ):" + decimalFormat.format(ir));
+//        System.out.println("(-) INSS ( 10% ): " + decimalFormat.format(inss));
+//        System.out.println("(-) FGTS ( 11% ): " + decimalFormat.format(fgts));
+//        System.out.println("Total de descontos: " + decimalFormat.format(totalDescontos));
+//        System.out.println("Salário Líquido: " + decimalFormat.format(salarioLiquido));
 
-        double salarioBruto = valorHora * horasMes;
-        double percentualIR = 0;
-        if (salarioBruto <= 900) {
-            percentualIR = 0;
-        } else if (salarioBruto > 900 && salarioBruto <= 1500) {
-            percentualIR = .5;
-        } else if (salarioBruto > 1500 && salarioBruto <= 2500) {
-            percentualIR = .1;
-        } else if (salarioBruto > 2500) {
-            percentualIR = .2;
-        }
-        double ir = salarioBruto * percentualIR;
-        double inss = salarioBruto * .1;
-        double fgts = salarioBruto * .11;
-        double totalDescontos = ir + inss;
-        double salarioLiquido = salarioBruto - totalDescontos;
 
-        System.out.println("Salário bruto: (" + valorHora + "*" + horasMes + "): " + salarioBruto);
-        System.out.println("(-) IR (" + percentualIR+"% ):" + ir);
-        System.out.println("(-) INSS ( 10% ): " + inss);
-        System.out.println("(-) FGTS ( 11% ): " + fgts);
-        System.out.println("Total de descontos: " + totalDescontos);
-        System.out.println("Salário Líquido: " + salarioLiquido);
+//        //13. Programa dia da semana.
+//        System.out.println("Por favor, insira um valor inteiro para representar um dia da semana");
+//        int diaDaSemana = scan.nextInt();
+//        switch (diaDaSemana) {
+//            case 1 -> System.out.println("Domingo");
+//            case 2 -> System.out.println("Segunda");
+//            case 3 -> System.out.println("Terça");
+//            case 4 -> System.out.println("Quarta");
+//            case 5 -> System.out.println("Quinta");
+//            case 6 -> System.out.println("Sexta");
+//            case 7 -> System.out.println("Sábado");
+//            default -> System.out.println("Valor inválido");
+//        }
+
+
+        //14.
     }
 }
