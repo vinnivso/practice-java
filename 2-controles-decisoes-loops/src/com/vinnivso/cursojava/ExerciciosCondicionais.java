@@ -253,24 +253,45 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //15. Programa verifica se é um triângulo e qual característica do mesmo, escaleno, isósceles ou equilátero.
-        System.out.println("Entre com o valor do primeiro lado");
-        double valorPrimeiroLado = scan.nextDouble();
-        System.out.println("Entre com o valor do segundo lado");
-        double valorSegundoLado = scan.nextDouble();
-        System.out.println("Entre com o valor do terceiro lado");
-        double valorTerceiroLado = scan.nextDouble();
+//        //15. Programa verifica se é um triângulo e qual característica do mesmo, escaleno, isósceles ou equilátero.
+//        System.out.println("Entre com o valor do primeiro lado");
+//        double valorPrimeiroLado = scan.nextDouble();
+//        System.out.println("Entre com o valor do segundo lado");
+//        double valorSegundoLado = scan.nextDouble();
+//        System.out.println("Entre com o valor do terceiro lado");
+//        double valorTerceiroLado = scan.nextDouble();
+//
+//        if (((valorPrimeiroLado + valorSegundoLado) > valorTerceiroLado) || ((valorPrimeiroLado + valorTerceiroLado) > valorSegundoLado) || ((valorSegundoLado + valorTerceiroLado) > valorPrimeiroLado)) {
+//            if (valorPrimeiroLado == valorSegundoLado && valorPrimeiroLado == valorTerceiroLado) {
+//                System.out.println("Equilátero");
+//            } else if (valorPrimeiroLado == valorSegundoLado || valorPrimeiroLado == valorTerceiroLado || valorSegundoLado == valorTerceiroLado) {
+//                System.out.println("Isósceles");
+//            } else {
+//                System.out.println("Escaleno");
+//            }
+//        } else {
+//            System.out.println("Os valores informados não correspondem com um triângulo");
+//        }
 
-        if (((valorPrimeiroLado + valorSegundoLado) > valorTerceiroLado) || ((valorPrimeiroLado + valorTerceiroLado) > valorSegundoLado) || ((valorSegundoLado + valorTerceiroLado) > valorPrimeiroLado)) {
-            if (valorPrimeiroLado == valorSegundoLado && valorPrimeiroLado == valorTerceiroLado) {
-                System.out.println("Equilátero");
-            } else if (valorPrimeiroLado == valorSegundoLado || valorPrimeiroLado == valorTerceiroLado || valorSegundoLado == valorTerceiroLado) {
-                System.out.println("Isósceles");
-            } else {
-                System.out.println("Escaleno");
-            }
+
+        //16. Faça um programa que calcule as raízes da equação de segundo grau. ax² + bx + c.
+        System.out.println("Informe os valores de a, b e c. Cada valor separado por SPACE ou ENTER");
+        double a = scan.nextDouble();
+        double b = scan.nextDouble();
+        double c = scan.nextDouble();
+        double delta = Math.pow(b, 2) - (4 * a * c);
+        if (a == 0) {
+            double x = -c / b;
+            System.out.println("Os parâmetros inseridos são de uma equação do primeiro grau, logo: x = " + decimalFormat.format(x));
         } else {
-            System.out.println("Os valores informados não correspondem com um triângulo");
+            if (delta < 0) {
+                System.out.println("O resultado de Delta é < 0, sendo assim a equação não possui raízes reais.");
+            } else {
+                double x1 = (-b + Math.sqrt(delta)) / 2 * a;
+                double x2 = (-b - Math.sqrt(delta)) / 2 * a;
+                System.out.println("x1 = " + decimalFormat.format(x1));
+                System.out.println("x2 = " + decimalFormat.format(x2));
+            }
         }
 
     }
