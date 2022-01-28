@@ -242,11 +242,22 @@ public class ExerciciosLoops {
 //        System.out.println("Média: " + decimalFormat.format(mediaInform));
 
 
-        //9. Programa que imprima na tela apenas os números primos entre 1 e 50.
-        for (int i = 1; i < 50; i++) {
-            if ( i % 2 != 0) {
-                System.out.println(i);
-            }
+//        //9. Programa que imprima na tela apenas os números primos entre 1 e 50.
+//        for (int i = 1; i < 50; i++) {
+//            if ( i % 2 != 0) {
+//                System.out.println(i);
+//            }
+//        }
+
+
+        //10. Programa recebe dois números inteiros e gere os números inteiros que estão no intervalo entre eles.
+        System.out.println("Entre com o primeiro número inteiro");
+        int primeiroNumeroInteiro = input.nextInt();
+        System.out.println("Entre com o segundo número inteiro");
+        int segundoNumeroInteiro = input.nextInt();
+
+        for (int i = primeiroNumeroInteiro; i < segundoNumeroInteiro; i++) {
+            System.out.println(i);
         }
     }
 }
