@@ -350,43 +350,84 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //20. Programa para fazer perguntas para suspeitas de um crime.
-        System.out.println("Telefonou para vítima? Responder 's' ou 'n' ");
-        String primeiraResposta = input.next();
-        System.out.println("Esteve no local do crime? Responder 's' ou 'n' ");
-        String segundaResposta = input.next();
-        System.out.println("Mora perto da vítima? Responder 's' ou 'n' ");
-        String terceiraResposta = input.next();
-        System.out.println("Devia para a vítima? Responder 's' ou 'n' ");
-        String quartaResposta = input.next();
-        System.out.println("Já trabalhou com a vítima?");
-        String quintaResposta = input.next();
+//        //20. Programa para fazer perguntas para suspeitas de um crime.
+//        System.out.println("Telefonou para vítima? Responder 's' ou 'n' ");
+//        String primeiraResposta = input.next();
+//        System.out.println("Esteve no local do crime? Responder 's' ou 'n' ");
+//        String segundaResposta = input.next();
+//        System.out.println("Mora perto da vítima? Responder 's' ou 'n' ");
+//        String terceiraResposta = input.next();
+//        System.out.println("Devia para a vítima? Responder 's' ou 'n' ");
+//        String quartaResposta = input.next();
+//        System.out.println("Já trabalhou com a vítima?");
+//        String quintaResposta = input.next();
+//
+//        int contador = 0;
+//        if (primeiraResposta.equalsIgnoreCase("S")) {
+//            contador ++;
+//        }
+//        if (segundaResposta.equalsIgnoreCase("S")) {
+//            contador ++;
+//        }
+//        if (terceiraResposta.equalsIgnoreCase("S")) {
+//            contador ++;
+//        }
+//        if (quartaResposta.equalsIgnoreCase("S")) {
+//            contador ++;
+//        }
+//        if (quintaResposta.equalsIgnoreCase("S")) {
+//            contador ++;
+//        }
+//
+//        if (contador == 2) {
+//            System.out.println("Suspeito");
+//        } else if (contador == 3 || contador == 4) {
+//            System.out.println("Cúmplice");
+//        } else if (contador == 5) {
+//            System.out.println("Assassino");
+//        } else {
+//            System.out.println("Inocente");
+//        }
 
-        int contador = 0;
-        if (primeiraResposta.equalsIgnoreCase("S")) {
-            contador ++;
-        }
-        if (segundaResposta.equalsIgnoreCase("S")) {
-            contador ++;
-        }
-        if (terceiraResposta.equalsIgnoreCase("S")) {
-            contador ++;
-        }
-        if (quartaResposta.equalsIgnoreCase("S")) {
-            contador ++;
-        }
-        if (quintaResposta.equalsIgnoreCase("S")) {
-            contador ++;
+
+        //21. Programa que calcula gasto em posto de gasolina.
+        System.out.println("Entre com a qtd de litros vendidos");
+        double litros = input.nextDouble();
+
+        System.out.println("Entre com o tipode combustível");
+        String tipo = input.next();
+
+        double precoGas = 2.5;
+        double precoAlc = 1.9;
+        int percDesconto = 0;
+        double total = 0;
+        double totalDesc = 0;
+
+        if (tipo.equalsIgnoreCase("a")){
+
+            if (litros <= 20){
+                percDesconto = 3;
+            } else {
+                percDesconto = 5;
+            }
+
+            total = litros * precoAlc;
+
+        } else if (tipo.equalsIgnoreCase("g")){
+
+            if (litros <= 20){
+                percDesconto = 4;
+            } else {
+                percDesconto = 6;
+            }
+
+            total = litros * precoGas;
         }
 
-        if (contador == 2) {
-            System.out.println("Suspeito");
-        } else if (contador == 3 || contador == 4) {
-            System.out.println("Cúmplice");
-        } else if (contador == 5) {
-            System.out.println("Assassino");
-        } else {
-            System.out.println("Inocente");
-        }
+        totalDesc = (total / 100) * percDesconto;
+
+        double precoAPagar = total - totalDesc;
+
+        System.out.println("Valor a ser pago: " + precoAPagar);
     }
 }
