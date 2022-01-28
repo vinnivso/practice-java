@@ -250,14 +250,26 @@ public class ExerciciosLoops {
 //        }
 
 
-        //10. Programa recebe dois números inteiros e gere os números inteiros que estão no intervalo entre eles.
-        System.out.println("Entre com o primeiro número inteiro");
-        int primeiroNumeroInteiro = input.nextInt();
-        System.out.println("Entre com o segundo número inteiro");
-        int segundoNumeroInteiro = input.nextInt();
+//        //10. Programa recebe dois números inteiros e gere os números inteiros que estão no intervalo entre eles.
+//        System.out.println("Entre com o primeiro número inteiro");
+//        int primeiroNumeroInteiro = input.nextInt();
+//        System.out.println("Entre com o segundo número inteiro");
+//        int segundoNumeroInteiro = input.nextInt();
+//
+//        for (int i = primeiroNumeroInteiro; i < segundoNumeroInteiro; i++) {
+//            System.out.println(i);
+//        }
 
-        for (int i = primeiroNumeroInteiro; i < segundoNumeroInteiro; i++) {
-            System.out.println(i);
+
+        //11. Altera o programa 10 para mostrar no final a soma dos números.
+        System.out.println("Entre com o primeiro número inteiro");
+        int primeiroNumeroParaSomar = input.nextInt();
+        System.out.println("Entre com o segundo número inteiro");
+        int segundoNumeroParaSomar = input.nextInt();
+        int soma = 0;
+        for (int i = primeiroNumeroParaSomar; i < segundoNumeroParaSomar; soma += i++) {
+            System.out.println("Soma atual: " + soma);
         }
+        System.out.println("Soma total: " + soma);
     }
 }
