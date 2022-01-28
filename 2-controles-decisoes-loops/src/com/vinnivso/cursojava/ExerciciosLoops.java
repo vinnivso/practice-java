@@ -282,16 +282,35 @@ public class ExerciciosLoops {
 //        }
 
 
-        //13. Programa que peça dois números e demonstre base e expoente.
-        System.out.println("Entre com a base:");
-        int base = input.nextInt();
-        System.out.println("Entre com a potência");
-        int expoente = input.nextInt();
+//        //13. Programa que peça dois números e demonstre base e expoente.
+//        System.out.println("Entre com a base:");
+//        int base = input.nextInt();
+//        System.out.println("Entre com a potência");
+//        int expoente = input.nextInt();
+//
+//        int resultado = base;
+//        for (int i=1; i < expoente; i++){
+//            resultado *= base;
+//        }
+//        System.out.println("Resultado: " + resultado);
 
-        int resultado = base;
-        for (int i=1; i < expoente; i++){
-            resultado *= base;
+
+        //14. Programa pede dois números inteiros e demonstre os números pares e ímpares entre eles.
+        int numeroDefinidoPeloUsuario;
+        int pares = 0;
+        int impares = 0;
+
+        System.out.println("Entre com 10 números inteiros, separados por SPACE ou ENTER: ");
+        for (int i = 0; i < 10; i++) {
+            numeroDefinidoPeloUsuario = input.nextInt();
+
+            if (numeroDefinidoPeloUsuario % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
         }
-        System.out.println("Resultado: " + resultado);
+        System.out.println("Pares: " + pares);
+        System.out.println("Ímpares: " + impares);
     }
 }
