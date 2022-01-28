@@ -273,12 +273,25 @@ public class ExerciciosLoops {
 //        System.out.println("Soma total: " + soma);
 
 
-        //12. Programa capaz de gerar tabuada de 1 a 10.
-        System.out.println("Entre com o número para gerar a tabuada: Lembrando que a tabuada deve receber valores inteiros");
-        int numeroTabuada = input.nextInt();
-        System.out.println("Tabuada de " + numeroTabuada + ":");
-        for (int i=1; i<=10; i++){
-            System.out.println(numeroTabuada + " x " + i + " = " + (numeroTabuada*i));
+//        //12. Programa capaz de gerar tabuada de 1 a 10.
+//        System.out.println("Entre com o número para gerar a tabuada: Lembrando que a tabuada deve receber valores inteiros");
+//        int numeroTabuada = input.nextInt();
+//        System.out.println("Tabuada de " + numeroTabuada + ":");
+//        for (int i=1; i<=10; i++){
+//            System.out.println(numeroTabuada + " x " + i + " = " + (numeroTabuada*i));
+//        }
+
+
+        //13. Programa que peça dois números e demonstre base e expoente.
+        System.out.println("Entre com a base:");
+        int base = input.nextInt();
+        System.out.println("Entre com a potência");
+        int expoente = input.nextInt();
+
+        int resultado = base;
+        for (int i=1; i < expoente; i++){
+            resultado *= base;
         }
+        System.out.println("Resultado: " + resultado);
     }
 }
