@@ -314,25 +314,40 @@ public class ExerciciosLoops {
 //        System.out.println("Ímpares: " + impares);
 
 
-        //15. Programa capaz de gerar uma sequência de Fibonacci, até o n-ésimo termo.
-        System.out.println("Entre com o n-ésimo termo da série de Fibonacci que deseja gerar");
-        int n = input.nextInt();
-        int primeiroTermo = 1;
-        int segundoTermo = 1;
-        int proximoTermo;
-        System.out.println(primeiroTermo);
-        System.out.println(segundoTermo);
+//        //15. Programa capaz de gerar uma sequência de Fibonacci, até o n-ésimo termo.
+//        System.out.println("Entre com o n-ésimo termo da série de Fibonacci que deseja gerar");
+//        int n = input.nextInt();
+//        int primeiroTermo = 1;
+//        int segundoTermo = 1;
+//        int proximoTermo;
+//        System.out.println(primeiroTermo);
+//        System.out.println(segundoTermo);
+//
+//        //1,1,2,3,5
+//        //primeiro = 1
+//        //segundo = 2
+//        //proximo = 3
+//
+//        for (int i = 3; i <= n; i++) {
+//            proximoTermo = primeiroTermo + segundoTermo;
+//            primeiroTermo = segundoTermo;
+//            segundoTermo = proximoTermo;
+//            System.out.println("Número da série: " + proximoTermo + ", presente no termo: " + i);
+//        }
 
-        //1,1,2,3,5
-        //primeiro = 1
-        //segundo = 2
-        //proximo = 3
 
-        for (int i = 3; i <= n; i++) {
-            proximoTermo = primeiroTermo + segundoTermo;
-            primeiroTermo = segundoTermo;
-            segundoTermo = proximoTermo;
-            System.out.println("Número da série: " + proximoTermo + ", presente no termo: " + i);
-        }
+        //16. Programa com nova série de Fibonacci, gerar até que o valor seja <= 500.
+        int primeiroTermoNovaFibonacci = 1;
+        int segundoTermoNovaFibonacci = 1;
+        int proximoTermoNovaFibonacci = 0;
+        System.out.println(primeiroTermoNovaFibonacci);
+        System.out.println(segundoTermoNovaFibonacci);
+
+        do {
+            proximoTermoNovaFibonacci = primeiroTermoNovaFibonacci + segundoTermoNovaFibonacci;
+            primeiroTermoNovaFibonacci = segundoTermoNovaFibonacci;
+            segundoTermoNovaFibonacci = proximoTermoNovaFibonacci;
+            System.out.println(proximoTermoNovaFibonacci);
+        } while (proximoTermoNovaFibonacci <= 500);
     }
 }
