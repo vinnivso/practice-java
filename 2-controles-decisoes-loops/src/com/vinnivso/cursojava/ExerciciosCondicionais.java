@@ -431,37 +431,95 @@ public class ExerciciosCondicionais {
 //        System.out.println("Valor a ser pago: " + precoAPagar);
 
 
-        //22. Programa que calcula o preço total da compra de frutas em um mercado.
-        System.out.println("Entre com a quantidade (kg) de morango:");
-        double qtdMorango = input.nextDouble();
+//        //22. Programa que calcula o preço total da compra de frutas em um mercado.
+//        System.out.println("Entre com a quantidade (kg) de morango:");
+//        double qtdMorango = input.nextDouble();
+//
+//        System.out.println("Entre com a quantidade (kg) de maça:");
+//        double qtdMaca = input.nextDouble();
+//
+//        double precoKgMorango = 0;
+//        if (qtdMorango <= 5){
+//            precoKgMorango =  2.5;
+//        } else {
+//            precoKgMorango =  2.2;
+//        }
+//
+//        double precoKgMaca = 0;
+//        if (qtdMaca <= 5){
+//            precoKgMaca = 1.8;
+//        } else {
+//            precoKgMaca = 1.5;
+//        }
+//
+//        double precoTotalMorango = qtdMorango * precoKgMorango;
+//        double precoTotalMaca = qtdMaca * precoKgMaca;
+//
+//        double precoParcial = precoKgMorango + precoKgMaca;
+//        double precoTotal = precoParcial;
+//
+//        if ((qtdMorango + qtdMaca > 8) || precoParcial > 25){
+//            precoTotal = precoParcial - ((precoParcial / 100) * 10);
+//        }
+//
+//        System.out.println("Preco total = " + precoTotal);
 
-        System.out.println("Entre com a quantidade (kg) de maça:");
-        double qtdMaca = input.nextDouble();
 
-        double precoKgMorango = 0;
-        if (qtdMorango <= 5){
-            precoKgMorango =  2.5;
+        //23. Programa que simula compra realizada com cartão.
+        System.out.println("Entre com o tipo da carne:");
+        System.out.println("1 - file duplo");
+        System.out.println("2 - alcatra");
+        System.out.println("3 - picanha");
+        int tipo = input.nextInt();
+
+        System.out.println("Entre com a quantidade (kg):");
+        double qtd = input.nextDouble();
+
+        double precoKg = 0;
+
+        if (tipo == 1){
+
+            System.out.println(qtd + "kg - file duplo");
+
+            if (qtd < 5){
+                precoKg = 4.9;
+            } else {
+                precoKg = 5.8;
+            }
+
+
+        } else if (tipo == 2){
+
+            System.out.println(qtd + "kg - alcatra");
+
+            if (qtd < 5){
+                precoKg = 5.9;
+            } else {
+                precoKg = 6.8;
+            }
+        } else if (tipo == 3){
+
+            System.out.println(qtd + "kg - picanha");
+
+            if (qtd < 5){
+                precoKg = 6.9;
+            } else {
+                precoKg = 7.8;
+            }
+        }
+
+        double total = qtd * precoKg;
+        System.out.println(qtd + "kg * " + precoKg + " = " + total);
+
+        System.out.println("Compra no cartão? digite 1 para sim:");
+        int cartao = input.nextInt();
+
+        if (cartao == 1){
+            double desconto = (total / 100) * 5;
+            System.out.println("Desconto de: " + desconto);
+            System.out.println("Valor a pagar: " + (total - desconto));
         } else {
-            precoKgMorango =  2.2;
+            System.out.println("Valor a pagar: " + total);
         }
-
-        double precoKgMaca = 0;
-        if (qtdMaca <= 5){
-            precoKgMaca = 1.8;
-        } else {
-            precoKgMaca = 1.5;
-        }
-
-        double precoTotalMorango = qtdMorango * precoKgMorango;
-        double precoTotalMaca = qtdMaca * precoKgMaca;
-
-        double precoParcial = precoKgMorango + precoKgMaca;
-        double precoTotal = precoParcial;
-
-        if ((qtdMorango + qtdMaca > 8) || precoParcial > 25){
-            precoTotal = precoParcial - ((precoParcial / 100) * 10);
-        }
-
-        System.out.println("Preco total = " + precoTotal);
     }
 }
