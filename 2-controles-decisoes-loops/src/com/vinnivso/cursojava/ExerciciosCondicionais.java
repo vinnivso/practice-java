@@ -319,36 +319,74 @@ public class ExerciciosCondicionais {
 //        }
 
 
-        //19. Programa pede dois números e solicita operação básica para o usuário.
-        System.out.println("Informe o valor do primeiro número natural");
-        long primeiroNumeroNatural = input.nextLong();
-        System.out.println("Informe o valor do segundo número natural");
-        long segundoNumeroNatural = input.nextLong();
-        System.out.println("Informe a operação desejada (+ , - , * , / )");
-        String operacaoDesejada = input.next();
+//        //19. Programa pede dois números e solicita operação básica para o usuário.
+//        System.out.println("Informe o valor do primeiro número natural");
+//        long primeiroNumeroNatural = input.nextLong();
+//        System.out.println("Informe o valor do segundo número natural");
+//        long segundoNumeroNatural = input.nextLong();
+//        System.out.println("Informe a operação desejada (+ , - , * , / )");
+//        String operacaoDesejada = input.next();
+//
+//        switch (operacaoDesejada) {
+//            case "+" -> System.out.println("Resultado da soma: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural + segundoNumeroNatural)));
+//            case "-" -> System.out.println("Resultado da subtração: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural - segundoNumeroNatural)));
+//            case "*" -> System.out.println("Resultado da multiplicação: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural * segundoNumeroNatural)));
+//            case "/" -> System.out.println("Resultado da divisão: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural / segundoNumeroNatural)));
+//            default -> System.out.println("Por favor, insira uma operação com base nos modelos apresentados");
+//        }
+//
+//        if (primeiroNumeroNatural == 0) {
+//            System.out.println("O número: " + primeiroNumeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
+//        } else if (primeiroNumeroNatural % 2 == 0) {
+//            System.out.println("O número: " + primeiroNumeroNatural + " é PAR");
+//        } else if (segundoNumeroNatural == 0) {
+//            System.out.println("O número: " + segundoNumeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
+//        } else if (segundoNumeroNatural % 2 == 0) {
+//            System.out.println("O número: " + segundoNumeroNatural + " é PAR");
+//        }
+//        else {
+//            System.out.println("O número: " + primeiroNumeroNatural + " é ÍMPAR");
+//            System.out.println("O número: " + segundoNumeroNatural + " é ÍMPAR");
+//        }
 
-        switch (operacaoDesejada) {
-            case "+" -> System.out.println("Resultado da soma: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural + segundoNumeroNatural)));
-            case "-" -> System.out.println("Resultado da subtração: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural - segundoNumeroNatural)));
-            case "*" -> System.out.println("Resultado da multiplicação: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural * segundoNumeroNatural)));
-            case "/" -> System.out.println("Resultado da divisão: " + String.valueOf(decimalFormat.format(primeiroNumeroNatural / segundoNumeroNatural)));
-            default -> System.out.println("Por favor, insira uma operação com base nos modelos apresentados");
+
+        //20. Programa para fazer perguntas para suspeitas de um crime.
+        System.out.println("Telefonou para vítima? Responder 's' ou 'n' ");
+        String primeiraResposta = input.next();
+        System.out.println("Esteve no local do crime? Responder 's' ou 'n' ");
+        String segundaResposta = input.next();
+        System.out.println("Mora perto da vítima? Responder 's' ou 'n' ");
+        String terceiraResposta = input.next();
+        System.out.println("Devia para a vítima? Responder 's' ou 'n' ");
+        String quartaResposta = input.next();
+        System.out.println("Já trabalhou com a vítima?");
+        String quintaResposta = input.next();
+
+        int contador = 0;
+        if (primeiraResposta.equalsIgnoreCase("S")) {
+            contador ++;
+        }
+        if (segundaResposta.equalsIgnoreCase("S")) {
+            contador ++;
+        }
+        if (terceiraResposta.equalsIgnoreCase("S")) {
+            contador ++;
+        }
+        if (quartaResposta.equalsIgnoreCase("S")) {
+            contador ++;
+        }
+        if (quintaResposta.equalsIgnoreCase("S")) {
+            contador ++;
         }
 
-        if (primeiroNumeroNatural == 0) {
-            System.out.println("O número: " + primeiroNumeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
-        } else if (primeiroNumeroNatural % 2 == 0) {
-            System.out.println("O número: " + primeiroNumeroNatural + " é PAR");
-        } else if (segundoNumeroNatural == 0) {
-            System.out.println("O número: " + segundoNumeroNatural + " não corresponde a classificação ÍMPAR ou PAR");
-        } else if (segundoNumeroNatural % 2 == 0) {
-            System.out.println("O número: " + segundoNumeroNatural + " é PAR");
+        if (contador == 2) {
+            System.out.println("Suspeito");
+        } else if (contador == 3 || contador == 4) {
+            System.out.println("Cúmplice");
+        } else if (contador == 5) {
+            System.out.println("Assassino");
+        } else {
+            System.out.println("Inocente");
         }
-        else {
-            System.out.println("O número: " + primeiroNumeroNatural + " é ÍMPAR");
-            System.out.println("O número: " + segundoNumeroNatural + " é ÍMPAR");
-        }
-
-
     }
 }
