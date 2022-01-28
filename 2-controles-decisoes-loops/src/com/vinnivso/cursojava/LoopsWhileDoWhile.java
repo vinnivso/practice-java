@@ -1,6 +1,6 @@
 package com.vinnivso.cursojava;
 
-public class WhileDoWhile {
+public class LoopsWhileDoWhile {
     public static void main (String[] args) {
 
         //WHILE

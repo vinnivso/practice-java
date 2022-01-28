@@ -2,7 +2,7 @@ package com.vinnivso.cursojava;
 
 import java.util.Scanner;
 
-public class IfElse {
+public class CondicionaisIfElse {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

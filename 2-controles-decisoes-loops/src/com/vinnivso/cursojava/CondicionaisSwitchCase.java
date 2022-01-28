@@ -2,7 +2,7 @@ package com.vinnivso.cursojava;
 
 import java.util.Scanner;
 
-public class SwitchCase {
+public class CondicionaisSwitchCase {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
