@@ -205,10 +205,25 @@ public class ExerciciosLoops {
 //        System.out.println("Para o país A ultrapassar ou igualar com a população do país B, vão demorar " + i + " anos");
 
 
-        //6. Programa que imprime na tela os números de 1 a 20.
-        for (int i = 0; i <= 20; i++) {
-            System.out.println(i);
-            System.out.println("i tem valor: " + i );
+//        //6. Programa que imprime na tela os números de 1 a 20.
+//        for (int i = 0; i <= 20; i++) {
+//            System.out.println(i);
+//            System.out.println("i tem valor: " + i );
+//        }
+
+
+        //7. Programa que leia 5 números e informe o maior número.
+        double num;
+        double maior = Double.MIN_VALUE;
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Entre com um número");
+            num = input.nextDouble();
+
+            if (num > maior) {
+                maior = num;
+                System.out.println("O número maior mudou: " + maior);
+            }
         }
+        System.out.println("O maior número digitado foi: " + maior);
     }
 }
