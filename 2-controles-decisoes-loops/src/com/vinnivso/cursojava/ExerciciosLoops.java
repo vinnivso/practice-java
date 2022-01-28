@@ -295,22 +295,44 @@ public class ExerciciosLoops {
 //        System.out.println("Resultado: " + resultado);
 
 
-        //14. Programa pede dois números inteiros e demonstre os números pares e ímpares entre eles.
-        int numeroDefinidoPeloUsuario;
-        int pares = 0;
-        int impares = 0;
+//        //14. Programa pede dois números inteiros e demonstre os números pares e ímpares entre eles.
+//        int numeroDefinidoPeloUsuario;
+//        int pares = 0;
+//        int impares = 0;
+//
+//        System.out.println("Entre com 10 números inteiros, separados por SPACE ou ENTER: ");
+//        for (int i = 0; i < 10; i++) {
+//            numeroDefinidoPeloUsuario = input.nextInt();
+//
+//            if (numeroDefinidoPeloUsuario % 2 == 0) {
+//                pares++;
+//            } else {
+//                impares++;
+//            }
+//        }
+//        System.out.println("Pares: " + pares);
+//        System.out.println("Ímpares: " + impares);
 
-        System.out.println("Entre com 10 números inteiros, separados por SPACE ou ENTER: ");
-        for (int i = 0; i < 10; i++) {
-            numeroDefinidoPeloUsuario = input.nextInt();
 
-            if (numeroDefinidoPeloUsuario % 2 == 0) {
-                pares++;
-            } else {
-                impares++;
-            }
+        //15. Programa capaz de gerar uma sequência de Fibonacci, até o n-ésimo termo.
+        System.out.println("Entre com o n-ésimo termo da série de Fibonacci que deseja gerar");
+        int n = input.nextInt();
+        int primeiroTermo = 1;
+        int segundoTermo = 1;
+        int proximoTermo;
+        System.out.println(primeiroTermo);
+        System.out.println(segundoTermo);
+
+        //1,1,2,3,5
+        //primeiro = 1
+        //segundo = 2
+        //proximo = 3
+
+        for (int i = 3; i <= n; i++) {
+            proximoTermo = primeiroTermo + segundoTermo;
+            primeiroTermo = segundoTermo;
+            segundoTermo = proximoTermo;
+            System.out.println("Número da série: " + proximoTermo + ", presente no termo: " + i);
         }
-        System.out.println("Pares: " + pares);
-        System.out.println("Ímpares: " + impares);
     }
 }
