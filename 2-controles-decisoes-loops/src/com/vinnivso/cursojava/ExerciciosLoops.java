@@ -212,18 +212,33 @@ public class ExerciciosLoops {
 //        }
 
 
-        //7. Programa que leia 5 números e informe o maior número.
-        double num;
-        double maior = Double.MIN_VALUE;
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Entre com um número");
-            num = input.nextDouble();
+//        //7. Programa que leia 5 números e informe o maior número.
+//        double num;
+//        double maior = Double.MIN_VALUE;
+//        for (int i = 0; i < 5; i++) {
+//            System.out.println("Entre com um número");
+//            num = input.nextDouble();
+//
+//            if (num > maior) {
+//                maior = num;
+//                System.out.println("O número maior mudou: " + maior);
+//            }
+//        }
+//        System.out.println("O maior número digitado foi: " + maior);
 
-            if (num > maior) {
-                maior = num;
-                System.out.println("O número maior mudou: " + maior);
-            }
+
+        //8. Programa que leia 5 números e informe a soma e a média dos números.
+        double numeroInform;
+        double mediaInform;
+        double somaInform = 0;
+
+        for (int i = 0; i< 5; i++) {
+            System.out.println("Digite um número");
+            numeroInform = input.nextDouble();
+            somaInform += numeroInform;
         }
-        System.out.println("O maior número digitado foi: " + maior);
+        mediaInform = somaInform / 5;
+        System.out.println("Soma: " + decimalFormat.format(somaInform));
+        System.out.println("Média: " + decimalFormat.format(mediaInform));
     }
 }
