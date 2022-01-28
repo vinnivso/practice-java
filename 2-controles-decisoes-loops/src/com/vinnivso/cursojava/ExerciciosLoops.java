@@ -227,18 +227,26 @@ public class ExerciciosLoops {
 //        System.out.println("O maior número digitado foi: " + maior);
 
 
-        //8. Programa que leia 5 números e informe a soma e a média dos números.
-        double numeroInform;
-        double mediaInform;
-        double somaInform = 0;
+//        //8. Programa que leia 5 números e informe a soma e a média dos números.
+//        double numeroInform;
+//        double mediaInform;
+//        double somaInform = 0;
+//
+//        for (int i = 0; i< 5; i++) {
+//            System.out.println("Digite um número");
+//            numeroInform = input.nextDouble();
+//            somaInform += numeroInform;
+//        }
+//        mediaInform = somaInform / 5;
+//        System.out.println("Soma: " + decimalFormat.format(somaInform));
+//        System.out.println("Média: " + decimalFormat.format(mediaInform));
 
-        for (int i = 0; i< 5; i++) {
-            System.out.println("Digite um número");
-            numeroInform = input.nextDouble();
-            somaInform += numeroInform;
+
+        //9. Programa que imprima na tela apenas os números primos entre 1 e 50.
+        for (int i = 1; i < 50; i++) {
+            if ( i % 2 != 0) {
+                System.out.println(i);
+            }
         }
-        mediaInform = somaInform / 5;
-        System.out.println("Soma: " + decimalFormat.format(somaInform));
-        System.out.println("Média: " + decimalFormat.format(mediaInform));
     }
 }
