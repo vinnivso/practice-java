@@ -391,43 +391,77 @@ public class ExerciciosCondicionais {
 
 
         //21. Programa que calcula gasto em posto de gasolina.
-        System.out.println("Entre com a qtd de litros vendidos");
-        double litros = input.nextDouble();
+//        System.out.println("Entre com a qtd de litros vendidos");
+//        double litros = input.nextDouble();
+//
+//        System.out.println("Entre com o tipode combustível");
+//        String tipo = input.next();
+//
+//        double precoGas = 2.5;
+//        double precoAlc = 1.9;
+//        int percDesconto = 0;
+//        double total = 0;
+//        double totalDesc = 0;
+//
+//        if (tipo.equalsIgnoreCase("a")){
+//
+//            if (litros <= 20){
+//                percDesconto = 3;
+//            } else {
+//                percDesconto = 5;
+//            }
+//
+//            total = litros * precoAlc;
+//
+//        } else if (tipo.equalsIgnoreCase("g")){
+//
+//            if (litros <= 20){
+//                percDesconto = 4;
+//            } else {
+//                percDesconto = 6;
+//            }
+//
+//            total = litros * precoGas;
+//        }
+//
+//        totalDesc = (total / 100) * percDesconto;
+//
+//        double precoAPagar = total - totalDesc;
+//
+//        System.out.println("Valor a ser pago: " + precoAPagar);
 
-        System.out.println("Entre com o tipode combustível");
-        String tipo = input.next();
 
-        double precoGas = 2.5;
-        double precoAlc = 1.9;
-        int percDesconto = 0;
-        double total = 0;
-        double totalDesc = 0;
+        //22. Programa que calcula o preço total da compra de frutas em um mercado.
+        System.out.println("Entre com a quantidade (kg) de morango:");
+        double qtdMorango = input.nextDouble();
 
-        if (tipo.equalsIgnoreCase("a")){
+        System.out.println("Entre com a quantidade (kg) de maça:");
+        double qtdMaca = input.nextDouble();
 
-            if (litros <= 20){
-                percDesconto = 3;
-            } else {
-                percDesconto = 5;
-            }
-
-            total = litros * precoAlc;
-
-        } else if (tipo.equalsIgnoreCase("g")){
-
-            if (litros <= 20){
-                percDesconto = 4;
-            } else {
-                percDesconto = 6;
-            }
-
-            total = litros * precoGas;
+        double precoKgMorango = 0;
+        if (qtdMorango <= 5){
+            precoKgMorango =  2.5;
+        } else {
+            precoKgMorango =  2.2;
         }
 
-        totalDesc = (total / 100) * percDesconto;
+        double precoKgMaca = 0;
+        if (qtdMaca <= 5){
+            precoKgMaca = 1.8;
+        } else {
+            precoKgMaca = 1.5;
+        }
 
-        double precoAPagar = total - totalDesc;
+        double precoTotalMorango = qtdMorango * precoKgMorango;
+        double precoTotalMaca = qtdMaca * precoKgMaca;
 
-        System.out.println("Valor a ser pago: " + precoAPagar);
+        double precoParcial = precoKgMorango + precoKgMaca;
+        double precoTotal = precoParcial;
+
+        if ((qtdMorango + qtdMaca > 8) || precoParcial > 25){
+            precoTotal = precoParcial - ((precoParcial / 100) * 10);
+        }
+
+        System.out.println("Preco total = " + precoTotal);
     }
 }
