@@ -261,15 +261,24 @@ public class ExerciciosLoops {
 //        }
 
 
-        //11. Altera o programa 10 para mostrar no final a soma dos números.
-        System.out.println("Entre com o primeiro número inteiro");
-        int primeiroNumeroParaSomar = input.nextInt();
-        System.out.println("Entre com o segundo número inteiro");
-        int segundoNumeroParaSomar = input.nextInt();
-        int soma = 0;
-        for (int i = primeiroNumeroParaSomar; i < segundoNumeroParaSomar; soma += i++) {
-            System.out.println("Soma atual: " + soma);
+//        //11. Altera o programa 10 para mostrar no final a soma dos números.
+//        System.out.println("Entre com o primeiro número inteiro");
+//        int primeiroNumeroParaSomar = input.nextInt();
+//        System.out.println("Entre com o segundo número inteiro");
+//        int segundoNumeroParaSomar = input.nextInt();
+//        int soma = 0;
+//        for (int i = primeiroNumeroParaSomar; i < segundoNumeroParaSomar; soma += i++) {
+//            System.out.println("Soma atual: " + soma);
+//        }
+//        System.out.println("Soma total: " + soma);
+
+
+        //12. Programa capaz de gerar tabuada de 1 a 10.
+        System.out.println("Entre com o número para gerar a tabuada: Lembrando que a tabuada deve receber valores inteiros");
+        int numeroTabuada = input.nextInt();
+        System.out.println("Tabuada de " + numeroTabuada + ":");
+        for (int i=1; i<=10; i++){
+            System.out.println(numeroTabuada + " x " + i + " = " + (numeroTabuada*i));
         }
-        System.out.println("Soma total: " + soma);
     }
 }
