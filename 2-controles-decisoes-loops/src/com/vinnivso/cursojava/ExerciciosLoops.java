@@ -384,30 +384,54 @@ public class ExerciciosLoops {
 //        }
 
 
-        //19. Programa que mostre e calcule a média aritmética de N notas.
-        System.out.println("Entre com o número de notas");
-        int notasN = input.nextInt();
-        double somaNotasN = 0;
-        double mediaNotasN;
-        double notaNotasN;
+//        //19. Programa que mostre e calcule a média aritmética de N notas.
+//        System.out.println("Entre com o número de notas");
+//        int notasN = input.nextInt();
+//        double somaNotasN = 0;
+//        double mediaNotasN;
+//        double notaNotasN;
+//
+//        if (notasN <= 0) {
+//            System.out.println("Por favor, insira uma quantidade de notas válidas que possam ser verificadas, no caso, valores inteiros > 0");
+//        } else {
+//            for (int i = 0; i < notasN; i++) {
+//                System.out.println("Entre com a nota " + (i + 1));
+//                notaNotasN = input.nextDouble();
+//                if (notaNotasN < 0 || notaNotasN > 10) {
+//                    System.out.println("Nota inválida, não podem ser inseridas notas menores do que ZERO ou maiores do que DEZ");
+//                    break;
+//                } else {
+//                    somaNotasN += notasN;
+//                }
+//            }
+//            mediaNotasN = somaNotasN / notasN;
+//            System.out.println("Soma: " + somaNotasN);
+//            System.out.println("Média: " + mediaNotasN);
+//        }
 
-        if (notasN <= 0) {
-            System.out.println("Por favor, insira uma quantidade de notas válidas que possam ser verificadas, no caso, valores inteiros > 0");
-        } else {
-            for (int i = 0; i < notasN; i++) {
-                System.out.println("Entre com a nota " + (i + 1));
-                notaNotasN = input.nextDouble();
-                if (notaNotasN < 0 || notaNotasN > 10) {
-                    System.out.println("Nota inválida, não podem ser inseridas notas menores do que ZERO ou maiores do que DEZ");
-                    break;
-                } else {
-                    somaNotasN += notasN;
-                }
-            }
-            mediaNotasN = somaNotasN / notasN;
-            System.out.println("Soma: " + somaNotasN);
-            System.out.println("Média: " + mediaNotasN);
+
+        //20. Programa pede idade para n usuários e verifica com base nas idades, se a turma é JOVEM, ADULTA ou IDOSA.
+        System.out.println("Entre com a quantidade de idades");
+        int idades = input.nextInt();
+        int idadeIndividuo;
+        int somaIdadeIndividuo = 0;
+
+        for (int i = 0; i < idades; i++){
+
+            System.out.println("Entre com a idade da pessoa " + (i+1));
+            idadeIndividuo = input.nextInt();
+
+            somaIdadeIndividuo += idadeIndividuo;
         }
+        double mediaIdade = somaIdadeIndividuo / idades;
+        System.out.println("Média de idade: " + mediaIdade);
 
+        if (mediaIdade >= 0 && mediaIdade <=25){
+            System.out.println("Média da turma é JOVEM");
+        } else if (mediaIdade >= 26 && mediaIdade <=60){
+            System.out.println("Média da turma é ADULTA");
+        } else if (mediaIdade > 60){
+            System.out.println("Média da turma é IDOSA");
+        }
     }
 }
