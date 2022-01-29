@@ -367,20 +367,47 @@ public class ExerciciosLoops {
 //        System.out.println("Resultado de " + numeroInteiroInformado + "!" + " é " + fatorial);
 
 
-        //18. Programa que peça número inteiro e determine se ele é ou não um número primo.
-        System.out.println("Entre com um número inteiro");
-        int numeroPrimo = input.nextInt();
-        boolean primo = true;
+//        //18. Programa que peça número inteiro e determine se ele é ou não um número primo.
+//        System.out.println("Entre com um número inteiro");
+//        int numeroPrimo = input.nextInt();
+//        boolean primo = true;
+//
+//        for (int i = 2; i < numeroPrimo; i++) {
+//            if (numeroPrimo % i == 0) {
+//                System.out.println("Não é primo - divisível por " + i);
+//                primo = false;
+//                break;
+//            }
+//        }
+//        if (primo) {
+//            System.out.println("O número informado é um número primo");
+//        }
 
-        for (int i = 2; i < numeroPrimo; i++) {
-            if (numeroPrimo % i == 0) {
-                System.out.println("Não é primo - divisível por " + i);
-                primo = false;
-                break;
+
+        //19. Programa que mostre e calcule a média aritmética de N notas.
+        System.out.println("Entre com o número de notas");
+        int notasN = input.nextInt();
+        double somaNotasN = 0;
+        double mediaNotasN;
+        double notaNotasN;
+
+        if (notasN <= 0) {
+            System.out.println("Por favor, insira uma quantidade de notas válidas que possam ser verificadas, no caso, valores inteiros > 0");
+        } else {
+            for (int i = 0; i < notasN; i++) {
+                System.out.println("Entre com a nota " + (i + 1));
+                notaNotasN = input.nextDouble();
+                if (notaNotasN < 0 || notaNotasN > 10) {
+                    System.out.println("Nota inválida, não podem ser inseridas notas menores do que ZERO ou maiores do que DEZ");
+                    break;
+                } else {
+                    somaNotasN += notasN;
+                }
             }
+            mediaNotasN = somaNotasN / notasN;
+            System.out.println("Soma: " + somaNotasN);
+            System.out.println("Média: " + mediaNotasN);
         }
-        if (primo) {
-            System.out.println("O número informado é um número primo");
-        }
+
     }
 }
