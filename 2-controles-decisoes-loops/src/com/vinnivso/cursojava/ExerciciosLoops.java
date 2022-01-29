@@ -351,19 +351,36 @@ public class ExerciciosLoops {
 //        } while (proximoTermoNovaFibonacci <= 500);
 
 
-        //17. Programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
-        System.out.println("Informe um número inteiro");
-        int numeroInteiroInformado = input.nextInt();
-        int fatorial = 1;
+//        //17. Programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
+//        System.out.println("Informe um número inteiro");
+//        int numeroInteiroInformado = input.nextInt();
+//        int fatorial = 1;
+//
+//        if (numeroInteiroInformado == 0) {
+//            fatorial = 1;
+//        } else {
+//            for (int i = numeroInteiroInformado; i > 0; i--) {
+//                fatorial *= i;
+//                System.out.println(i);
+//            }
+//        }
+//        System.out.println("Resultado de " + numeroInteiroInformado + "!" + " é " + fatorial);
 
-        if (numeroInteiroInformado == 0) {
-            fatorial = 1;
-        } else {
-            for (int i = numeroInteiroInformado; i > 0; i--) {
-                fatorial *= i;
-                System.out.println(i);
+
+        //18. Programa que peça número inteiro e determine se ele é ou não um número primo.
+        System.out.println("Entre com um número inteiro");
+        int numeroPrimo = input.nextInt();
+        boolean primo = true;
+
+        for (int i = 2; i < numeroPrimo; i++) {
+            if (numeroPrimo % i == 0) {
+                System.out.println("Não é primo - divisível por " + i);
+                primo = false;
+                break;
             }
         }
-        System.out.println("Resultado de " + numeroInteiroInformado + "!" + " é " + fatorial);
+        if (primo) {
+            System.out.println("O número informado é um número primo");
+        }
     }
 }
