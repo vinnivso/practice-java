@@ -1,13 +1,13 @@
-package com.vinnivso.cursojava;
-
-import java.text.DecimalFormat;
-import java.util.Scanner;
-
-public class ExerciciosLoops {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        DecimalFormat decimalFormat = new DecimalFormat("0.00");
-
+//package com.vinnivso.cursojava;
+//
+//import java.text.DecimalFormat;
+//import java.util.Scanner;
+//
+//public class ExerciciosLoops {
+//    public static void main(String[] args) {
+//        Scanner input = new Scanner(System.in);
+//        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+//
 //        //1. Valide número inserido por usuário.
 //        System.out.println("insira a nota");
 //        boolean notaValida = false;
@@ -124,8 +124,8 @@ public class ExerciciosLoops {
 //        System.out.println("Salário: " + decimalFormat.format(salario));
 //        System.out.println("Sexo: " + sexo);
 //        System.out.println("Estado civil: " + estadoCivil);
-
-
+//
+//
 //        //4. Programa que calcule e escreve quantos anos a população de um país A vai ultrapassar país B.
 //        int popA = 80000;
 //        int popB = 200000;
@@ -138,8 +138,8 @@ public class ExerciciosLoops {
 //        System.out.println("População do País A: " + popA);
 //        System.out.println("População do País B: " + popB);
 //        System.out.println("Para o país A ultrapassar ou igualar com a população do país B, vão demorar " + i + " anos");
-
-
+//
+//
 //        //5. Programa que refatore o EX.4, usuário passando os parâmetros dos países.
 //        boolean validaInputDoUsuario = false;
 //        int popAUser;
@@ -203,15 +203,15 @@ public class ExerciciosLoops {
 //        System.out.println("População do País A: " + popAUser);
 //        System.out.println("População do País B: " + popBUser);
 //        System.out.println("Para o país A ultrapassar ou igualar com a população do país B, vão demorar " + i + " anos");
-
-
+//
+//
 //        //6. Programa que imprime na tela os números de 1 a 20.
 //        for (int i = 0; i <= 20; i++) {
 //            System.out.println(i);
 //            System.out.println("i tem valor: " + i );
 //        }
-
-
+//
+//
 //        //7. Programa que leia 5 números e informe o maior número.
 //        double num;
 //        double maior = Double.MIN_VALUE;
@@ -225,8 +225,8 @@ public class ExerciciosLoops {
 //            }
 //        }
 //        System.out.println("O maior número digitado foi: " + maior);
-
-
+//
+//
 //        //8. Programa que leia 5 números e informe a soma e a média dos números.
 //        double numeroInform;
 //        double mediaInform;
@@ -240,16 +240,16 @@ public class ExerciciosLoops {
 //        mediaInform = somaInform / 5;
 //        System.out.println("Soma: " + decimalFormat.format(somaInform));
 //        System.out.println("Média: " + decimalFormat.format(mediaInform));
-
-
+//
+//
 //        //9. Programa que imprima na tela apenas os números primos entre 1 e 50.
 //        for (int i = 1; i < 50; i++) {
 //            if ( i % 2 != 0) {
 //                System.out.println(i);
 //            }
 //        }
-
-
+//
+//
 //        //10. Programa recebe dois números inteiros e gere os números inteiros que estão no intervalo entre eles.
 //        System.out.println("Entre com o primeiro número inteiro");
 //        int primeiroNumeroInteiro = input.nextInt();
@@ -259,8 +259,8 @@ public class ExerciciosLoops {
 //        for (int i = primeiroNumeroInteiro; i < segundoNumeroInteiro; i++) {
 //            System.out.println(i);
 //        }
-
-
+//
+//
 //        //11. Altera o programa 10 para mostrar no final a soma dos números.
 //        System.out.println("Entre com o primeiro número inteiro");
 //        int primeiroNumeroParaSomar = input.nextInt();
@@ -271,8 +271,8 @@ public class ExerciciosLoops {
 //            System.out.println("Soma atual: " + soma);
 //        }
 //        System.out.println("Soma total: " + soma);
-
-
+//
+//
 //        //12. Programa capaz de gerar tabuada de 1 a 10.
 //        System.out.println("Entre com o número para gerar a tabuada: Lembrando que a tabuada deve receber valores inteiros");
 //        int numeroTabuada = input.nextInt();
@@ -280,8 +280,8 @@ public class ExerciciosLoops {
 //        for (int i=1; i<=10; i++){
 //            System.out.println(numeroTabuada + " x " + i + " = " + (numeroTabuada*i));
 //        }
-
-
+//
+//
 //        //13. Programa que peça dois números e demonstre base e expoente.
 //        System.out.println("Entre com a base:");
 //        int base = input.nextInt();
@@ -293,8 +293,8 @@ public class ExerciciosLoops {
 //            resultado *= base;
 //        }
 //        System.out.println("Resultado: " + resultado);
-
-
+//
+//
 //        //14. Programa pede dois números inteiros e demonstre os números pares e ímpares entre eles.
 //        int numeroDefinidoPeloUsuario;
 //        int pares = 0;
@@ -312,8 +312,8 @@ public class ExerciciosLoops {
 //        }
 //        System.out.println("Pares: " + pares);
 //        System.out.println("Ímpares: " + impares);
-
-
+//
+//
 //        //15. Programa capaz de gerar uma sequência de Fibonacci, até o n-ésimo termo.
 //        System.out.println("Entre com o n-ésimo termo da série de Fibonacci que deseja gerar");
 //        int n = input.nextInt();
@@ -334,8 +334,8 @@ public class ExerciciosLoops {
 //            segundoTermo = proximoTermo;
 //            System.out.println("Número da série: " + proximoTermo + ", presente no termo: " + i);
 //        }
-
-
+//
+//
 //        //16. Programa com nova série de Fibonacci, gerar até que o valor seja <= 500.
 //        int primeiroTermoNovaFibonacci = 1;
 //        int segundoTermoNovaFibonacci = 1;
@@ -349,8 +349,8 @@ public class ExerciciosLoops {
 //            segundoTermoNovaFibonacci = proximoTermoNovaFibonacci;
 //            System.out.println(proximoTermoNovaFibonacci);
 //        } while (proximoTermoNovaFibonacci <= 500);
-
-
+//
+//
 //        //17. Programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
 //        System.out.println("Informe um número inteiro");
 //        int numeroInteiroInformado = input.nextInt();
@@ -365,8 +365,8 @@ public class ExerciciosLoops {
 //            }
 //        }
 //        System.out.println("Resultado de " + numeroInteiroInformado + "!" + " é " + fatorial);
-
-
+//
+//
 //        //18. Programa que peça número inteiro e determine se ele é ou não um número primo.
 //        System.out.println("Entre com um número inteiro");
 //        int numeroPrimo = input.nextInt();
@@ -382,8 +382,8 @@ public class ExerciciosLoops {
 //        if (primo) {
 //            System.out.println("O número informado é um número primo");
 //        }
-
-
+//
+//
 //        //19. Programa que mostre e calcule a média aritmética de N notas.
 //        System.out.println("Entre com o número de notas");
 //        int notasN = input.nextInt();
@@ -408,30 +408,31 @@ public class ExerciciosLoops {
 //            System.out.println("Soma: " + somaNotasN);
 //            System.out.println("Média: " + mediaNotasN);
 //        }
-
-
-        //20. Programa pede idade para n usuários e verifica com base nas idades, se a turma é JOVEM, ADULTA ou IDOSA.
-        System.out.println("Entre com a quantidade de idades");
-        int idades = input.nextInt();
-        int idadeIndividuo;
-        int somaIdadeIndividuo = 0;
-
-        for (int i = 0; i < idades; i++){
-
-            System.out.println("Entre com a idade da pessoa " + (i+1));
-            idadeIndividuo = input.nextInt();
-
-            somaIdadeIndividuo += idadeIndividuo;
-        }
-        double mediaIdade = somaIdadeIndividuo / idades;
-        System.out.println("Média de idade: " + mediaIdade);
-
-        if (mediaIdade >= 0 && mediaIdade <=25){
-            System.out.println("Média da turma é JOVEM");
-        } else if (mediaIdade >= 26 && mediaIdade <=60){
-            System.out.println("Média da turma é ADULTA");
-        } else if (mediaIdade > 60){
-            System.out.println("Média da turma é IDOSA");
-        }
-    }
-}
+//
+//
+//        //20. Programa pede idade para n usuários e verifica com base nas idades, se a turma é JOVEM, ADULTA ou IDOSA.
+//        System.out.println("Entre com a quantidade de idades");
+//        int idades = input.nextInt();
+//        int idadeIndividuo;
+//        int somaIdadeIndividuo = 0;
+//
+//        for (int i = 0; i < idades; i++){
+//
+//            System.out.println("Entre com a idade da pessoa " + (i+1));
+//            idadeIndividuo = input.nextInt();
+//
+//            somaIdadeIndividuo += idadeIndividuo;
+//        }
+//        double mediaIdade = somaIdadeIndividuo / idades;
+//        System.out.println("Média de idade: " + mediaIdade);
+//
+//        if (mediaIdade >= 0 && mediaIdade <=25){
+//            System.out.println("Média da turma é JOVEM");
+//        } else if (mediaIdade >= 26 && mediaIdade <=60){
+//            System.out.println("Média da turma é ADULTA");
+//        } else if (mediaIdade > 60){
+//            System.out.println("Média da turma é IDOSA");
+//        }
+//
+//    }
+//}
