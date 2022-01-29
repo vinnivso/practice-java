@@ -13,5 +13,9 @@ public class ExercicioLoops10 {
         int primeiroNumeroInteiro = input.nextInt();
         System.out.println("Entre com o segundo número inteiro");
         int segundoNumeroInteiro = input.nextInt();
+
+        for (int i = primeiroNumeroInteiro; i < segundoNumeroInteiro; i++) {
+            System.out.println(i);
+        }
     }
 }
