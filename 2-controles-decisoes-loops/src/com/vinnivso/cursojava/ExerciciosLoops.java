@@ -336,18 +336,34 @@ public class ExerciciosLoops {
 //        }
 
 
-        //16. Programa com nova série de Fibonacci, gerar até que o valor seja <= 500.
-        int primeiroTermoNovaFibonacci = 1;
-        int segundoTermoNovaFibonacci = 1;
-        int proximoTermoNovaFibonacci = 0;
-        System.out.println(primeiroTermoNovaFibonacci);
-        System.out.println(segundoTermoNovaFibonacci);
+//        //16. Programa com nova série de Fibonacci, gerar até que o valor seja <= 500.
+//        int primeiroTermoNovaFibonacci = 1;
+//        int segundoTermoNovaFibonacci = 1;
+//        int proximoTermoNovaFibonacci = 0;
+//        System.out.println(primeiroTermoNovaFibonacci);
+//        System.out.println(segundoTermoNovaFibonacci);
+//
+//        do {
+//            proximoTermoNovaFibonacci = primeiroTermoNovaFibonacci + segundoTermoNovaFibonacci;
+//            primeiroTermoNovaFibonacci = segundoTermoNovaFibonacci;
+//            segundoTermoNovaFibonacci = proximoTermoNovaFibonacci;
+//            System.out.println(proximoTermoNovaFibonacci);
+//        } while (proximoTermoNovaFibonacci <= 500);
 
-        do {
-            proximoTermoNovaFibonacci = primeiroTermoNovaFibonacci + segundoTermoNovaFibonacci;
-            primeiroTermoNovaFibonacci = segundoTermoNovaFibonacci;
-            segundoTermoNovaFibonacci = proximoTermoNovaFibonacci;
-            System.out.println(proximoTermoNovaFibonacci);
-        } while (proximoTermoNovaFibonacci <= 500);
+
+        //17. Programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
+        System.out.println("Informe um número inteiro");
+        int numeroInteiroInformado = input.nextInt();
+        int fatorial = 1;
+
+        if (numeroInteiroInformado == 0) {
+            fatorial = 1;
+        } else {
+            for (int i = numeroInteiroInformado; i > 0; i--) {
+                fatorial *= i;
+                System.out.println(i);
+            }
+        }
+        System.out.println("Resultado de " + numeroInteiroInformado + "!" + " é " + fatorial);
     }
 }
