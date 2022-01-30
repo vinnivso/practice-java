@@ -1,4 +1,4 @@
-package com.vinnivso.cursojava;
+package com.vinnivso.cursojava.aulas;
 
 public class Operadores {
     public static void main(String[] args) {

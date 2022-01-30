@@ -1,4 +1,4 @@
-package com.vinnivso.cursojava;
+package com.vinnivso.cursojava.aulas;
 
 public class TiposPrimitivos {
     public static void main(String[] args) {

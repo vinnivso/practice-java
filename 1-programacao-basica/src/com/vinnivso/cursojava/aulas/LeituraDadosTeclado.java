@@ -1,4 +1,4 @@
-package com.vinnivso.cursojava;
+package com.vinnivso.cursojava.aulas;
 
 import java.util.Scanner;
 
