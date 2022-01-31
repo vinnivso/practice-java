@@ -9,25 +9,23 @@ public class ExercicioVetores02 {
         DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
         int[] vetorA = new int[8];
-        vetorA[0] = 1;
-        vetorA[1] = 2;
-        vetorA[2] = 3;
-        vetorA[3] = 4;
-        vetorA[4] = 5;
-        vetorA[5] = 6;
-        vetorA[6] = 7;
-        vetorA[7] = 8;
-        int[] vetorB = new int[8];
-        vetorB = vetorA;
+        int[] vetorB = new int[vetorA.length];
 
-        for (int element : vetorA) {
-            System.out.println("Os elementos presentes no vetor A são: " + element);
-        }
-        for (int element : vetorB) {
-            element *= 2;
-            System.out.println("Os elementos presentes no B são: " + element);
+        for (int i = 0; i < vetorA.length ; i++) {
+            System.out.println("Entre com o valor do vetor A, na posição: " + i);
+            vetorA[i] = input.nextInt();
+            vetorB[i] = 2 * vetorA[i];
         }
 
-        //Poderia ser feito realizando um for de maneira mais simples e passando a multiplicação por cada iteração no índice.
+        System.out.print("Vetor A = ");
+        for (int i = 0; i < vetorA.length ; i++) {
+            System.out.print(vetorA[i] + " ");
+        }
+        System.out.println();
+
+        System.out.print("Vetor B = ");
+        for (int i = 0; i < vetorB.length ; i++) {
+            System.out.print(vetorB[i] + " ");
+        }
     }
 }
