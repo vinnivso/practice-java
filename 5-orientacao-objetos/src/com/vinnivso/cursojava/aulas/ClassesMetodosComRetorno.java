@@ -1,7 +1,7 @@
 package com.vinnivso.cursojava.aulas;
 
-public class ClassesMetodosSimples {
-    static class Carro2 {
+public class ClassesMetodosComRetorno {
+    static class Carro3 {
         String marca;
         String modelo;
         int numPassageiros;
@@ -11,10 +11,14 @@ public class ClassesMetodosSimples {
         void exibirAutonomia() {
             System.out.println("A autonomia do carro é: " + capCombustivel * consumoCombustivel + " km");
         }
+        double obterAutonomia() {
+            System.out.println("Método obter Autonomia foi chamado");
+            return capCombustivel * consumoCombustivel;
+        }
     }
 
     public static void main(String[] args) {
-        Carro2 van = new Carro2();
+        Carro3 van = new Carro3();
         van.marca = "Fiat";
         van.modelo = "Ducato";
         van.numPassageiros = 10;
@@ -26,6 +30,7 @@ public class ClassesMetodosSimples {
         System.out.println(van.capCombustivel);
         System.out.println(van.consumoCombustivel);
         van.exibirAutonomia();
+        System.out.println("A autonomia do carro é: " + van.obterAutonomia() + " km");
         System.out.println();
     }
 }
